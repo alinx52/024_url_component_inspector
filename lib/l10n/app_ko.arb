@@ -1,0 +1,13 @@
+{
+  "appTitle": "URL Component Inspector",
+  "@appTitle": {
+    "description": "The app title shown in the system UI."
+  },
+  "appDescription": "Split a manually entered web URL into readable components and query parameters entirely offline.",
+  "@appDescription": {
+    "description": "The short description shown on the home page."
+  },
+  "languageEnglish": "English",
+  "languageKorean": "한국어",
+  "privacyPolicy": "개인정보처리방침"
+}

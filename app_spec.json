@@ -1,0 +1,121 @@
+{
+  "name": "url_component_inspector",
+  "org": "com.alinxs.apps",
+  "title": "URL Component Inspector",
+  "description": "Split a manually entered web URL into readable components and query parameters entirely offline.",
+  "korean_summary": "직접 입력하거나 붙여 넣은 HTTP 또는 HTTPS URL을 열거나 전송하지 않고 구성 요소와 쿼리 매개변수로 나누어 기기에서 확인하는 도구입니다. 계정, 백엔드, 서버 입력 저장 없이 동작하며 작업을 가리지 않는 표준 크기 AdMob 배너 하나만 표시합니다.",
+  "design_system": {
+    "style": "minimal_material",
+    "seed_color": "#315C7D",
+    "theme_mode": "system",
+    "density": "compact",
+    "corner_style": "medium",
+    "motion": "subtle"
+  },
+  "icon": {
+    "primary": "generic_utility",
+    "version": 1,
+    "foreground": "#FFFFFF",
+    "composition": "centered_safe_zone",
+    "background": "#315C7D",
+    "secondary": "url_components",
+    "source": null
+  },
+  "requirements": "Build a compact English-first Flutter Android utility whose first phone viewport explains local URL inspection and shows one URL to inspect input plus one obvious Inspect URL action above the footer and banner. Accept manually typed or pasted absolute HTTP and HTTPS URLs only, process them entirely on device, and never open, resolve, request, preview, or otherwise connect to the entered address. For a valid URL, show Scheme, Host, Port, Path, Query parameters, and Fragment in that order; show Default for an omitted port, / for an empty path, None for an absent query or fragment, and preserve repeated query parameters as separate ordered rows. Display both the original encoded query name and value and their UTF-8 percent-decoded forms when they differ, interpret plus signs literally rather than as spaces, and reject malformed percent escapes or invalid UTF-8. Normalize only the scheme and ASCII host to lowercase for display; do not rewrite the path, query, fragment, parameter order, repeated keys, blank values, or percent-escape letter case. Reject empty input with Enter a URL to inspect, reject relative URLs or URLs without a host with Enter a valid absolute URL with a scheme and host, reject schemes other than HTTP or HTTPS with Only HTTP and HTTPS URLs are supported, and reject input above 4096 characters with URL is too long, while preserving the last valid result after any invalid submission. Provide Clear URL as a secondary action. Do not retain history after the session, read the clipboard automatically, use WebView, access files, or request storage, contacts, location, camera, microphone, notification, or other sensitive permissions. Require no account or backend, store no app inputs on a server, and allow networking only for the existing Google Mobile Ads AdMob SDK. Preserve the generated design system and buildAppTheme integration. Provide complete ARB translations without English substitutions for en, ko, ja, zh_Hans, zh_Hant, es, fr, de, pt_BR, it, nl, ru, ar, hi, id, and vi, including RTL-safe Arabic layout. Put an immediately usable compact AppBar language menu showing the current locale code and a chevron on the first screen. Put the session-only AppAppearanceMenu immediately to the left of the in-app privacy-policy action in a bottom-centered footer directly above exactly one non-intrusive standard AdSize.banner, exposing only minimal_material, flat, and soft. The banner must never cover or displace the purpose, URL input, primary action, validation, result, or footer. Deterministic widget tests must verify that https://example.com:8443/docs/item?id=42&mode=full#details produces Scheme https, Host example.com, Port 8443, Path /docs/item, Query parameters 2 with ordered id = 42 and mode = full rows, and Fragment details; that an omitted port, empty path, absent query, and absent fragment show the specified fallback labels; that repeated keys and blank values remain ordered; that percent-decoding is shown without altering the original representation and plus signs remain literal; that empty, relative, unsupported-scheme, malformed-escape, invalid-UTF-8, and over-limit input show the specified localized errors while preserving the last valid result; and that switching from English to Arabic translates labels, applies RTL layout without clipping, and preserves input and results.",
+  "planning": {
+    "source": "codex",
+    "priority": 0,
+    "launch_scope": "global",
+    "problem": "Adults who receive long or encoded web URLs need a private way to see the exact address components and ordered query parameters without opening the address or sending it to an online parser.",
+    "audience": "Adult global users who troubleshoot links, verify manually copied URLs, or inspect query parameters before sharing or using an address.",
+    "differentiator": "Unlike the portfolio's IPv4 range planner, Unicode inspector, and delimited-text checker, this utility performs no network lookup and presents the structural boundaries, ordered parameters, and encoded versus decoded forms of a web URL.",
+    "monetization": "One standard-size AdMob banner remains below the bottom-centered appearance and privacy footer and never covers the URL input, primary action, validation, or inspection result.",
+    "privacy": "No account, backend, server-side input storage, automatic clipboard reading, WebView, or connection to entered URLs; input and results remain on device for the current session, with AdMob advertising disclosed separately.",
+    "test_scenarios": "Widget tests cover exact parsing of a URL with an explicit port, path, two ordered query parameters, and fragment; fallback labels for omitted components; repeated and blank query values; encoded and decoded display; literal plus signs; empty, relative, unsupported-scheme, malformed-escape, invalid-UTF-8, and over-4096-character validation that retains the last valid result; English-to-Arabic switching; and RTL layout without clipping."
+  },
+  "deployment": {
+    "play": {
+      "default_language": "en-US",
+      "app_type": "app",
+      "pricing": "free"
+    },
+    "content": {
+      "contains_ads": true,
+      "target_audience": "teens_and_adults",
+      "user_generated_content": false
+    },
+    "data_safety": {
+      "account_required": false,
+      "app_inputs_server_stored": false,
+      "third_party_sdks": [
+        "admob"
+      ]
+    },
+    "release": {
+      "launch_scope": "global",
+      "internal_test": true,
+      "production_approval_required": true,
+      "initial_production_rollout": 1.0
+    },
+    "admob_secret": "url_component_inspector_admob",
+    "category": "Tools"
+  },
+  "store_screenshots": [
+    {
+      "id": "phone-01",
+      "description": "Clean initial URL inspection state with the core input and primary action visible.",
+      "actions": [],
+      "expected_texts": [
+        "URL Component Inspector",
+        "URL to inspect",
+        "Inspect URL"
+      ],
+      "forbidden_texts": [
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    },
+    {
+      "id": "phone-02",
+      "description": "Inspect a concrete HTTPS URL and show each component plus two ordered query parameters.",
+      "actions": [
+        {
+          "type": "input",
+          "target": "URL to inspect",
+          "text": "https://example.com:8443/docs/item?id=42&mode=full#details"
+        },
+        {
+          "type": "tap",
+          "target": "Inspect URL"
+        },
+        {
+          "type": "wait",
+          "seconds": 2
+        }
+      ],
+      "expected_texts": [
+        "Inspection result",
+        "Scheme: https",
+        "Host: example.com",
+        "Port: 8443",
+        "Path: /docs/item",
+        "Query parameters: 2",
+        "id = 42",
+        "mode = full",
+        "Fragment: details"
+      ],
+      "forbidden_texts": [
+        "Enter a URL to inspect",
+        "Enter a valid absolute URL with a scheme and host",
+        "Only HTTP and HTTPS URLs are supported",
+        "URL is too long",
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    }
+  ]
+}
