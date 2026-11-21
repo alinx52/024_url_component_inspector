@@ -1,0 +1,9 @@
+{
+  "language": "en-US",
+  "title": "URL Component Inspector",
+  "short_description": "Split a manually entered web URL into readable components and query parameters",
+  "full_description": "URL Component Inspector\n\nSplit a manually entered web URL into readable components and query parameters entirely offline.\n\nFeatures:\n• Simple, clear results\n• Works offline\n• Choose your preferred language in the app settings",
+  "contact_email": "contact@alinxs.com",
+  "contact_website": "https://alinxs.com",
+  "contact_phone": ""
+}
