@@ -58,6 +58,7 @@ class _MyAppState extends State<MyApp> {
       theme: buildAppTheme(Brightness.light, styleOverride: _designStyle),
       darkTheme: buildAppTheme(Brightness.dark, styleOverride: _designStyle),
       themeMode: appThemeMode,
+      debugShowCheckedModeBanner: false,
       home: HomePage(
         locale: _locale,
         onLocaleChanged: _changeLocale,

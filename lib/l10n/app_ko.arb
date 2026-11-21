@@ -1,13 +1,32 @@
 {
-  "appTitle": "URL Component Inspector",
-  "@appTitle": {
-    "description": "The app title shown in the system UI."
-  },
-  "appDescription": "Split a manually entered web URL into readable components and query parameters entirely offline.",
-  "@appDescription": {
-    "description": "The short description shown on the home page."
-  },
-  "languageEnglish": "English",
-  "languageKorean": "한국어",
-  "privacyPolicy": "개인정보처리방침"
+  "@@locale": "ko",
+  "appTitle": "URL 구성 요소 검사기",
+  "appDescription": "URL 구성 요소와 순서가 유지된 쿼리 매개변수를 기기에서만 확인합니다. 주소를 열거나 전송하지 않습니다.",
+  "languageMenuTooltip": "언어 선택",
+  "privacyPolicy": "개인정보처리방침",
+  "appearanceTooltip": "화면 스타일 선택",
+  "appearanceMaterial": "머티리얼",
+  "appearanceFlat": "플랫",
+  "appearanceSoft": "소프트",
+  "urlInputLabel": "검사할 URL",
+  "urlInputHint": "https://example.com/path?key=value",
+  "inspectUrl": "URL 검사",
+  "clearUrl": "URL 지우기",
+  "inspectionResult": "검사 결과",
+  "scheme": "스킴",
+  "host": "호스트",
+  "port": "포트",
+  "path": "경로",
+  "fragment": "프래그먼트",
+  "defaultValue": "기본값",
+  "noneValue": "없음",
+  "componentValue": "{label}: {value}",
+  "queryCount": "쿼리 매개변수: {count}개",
+  "queryParameter": "{name} = {value}",
+  "decodedParameter": "디코딩됨: {name} = {value}",
+  "errorEmpty": "검사할 URL을 입력하세요",
+  "errorAbsolute": "스킴과 호스트가 있는 유효한 절대 URL을 입력하세요",
+  "errorScheme": "HTTP 및 HTTPS URL만 지원됩니다",
+  "errorTooLong": "URL이 너무 깁니다",
+  "errorEncoding": "URL에 잘못된 퍼센트 인코딩 또는 유효하지 않은 UTF-8이 있습니다"
 }

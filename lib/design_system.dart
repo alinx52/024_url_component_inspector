@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'l10n/app_localizations.dart';
+
 /// Generated from app_spec.json. Select a supported style in design_system
 /// instead of changing individual screens for global visual rules.
 const String appDesignStyle = "minimal_material";
@@ -12,11 +14,7 @@ const Color appDesignSeedColor = Color(0xFF315C7D);
 ThemeMode get appThemeMode =>
     appDesignThemeMode == 'light' ? ThemeMode.light : ThemeMode.system;
 
-const selectableAppearanceStyles = <String>[
-  'minimal_material',
-  'flat',
-  'soft',
-];
+const selectableAppearanceStyles = <String>['minimal_material', 'flat', 'soft'];
 
 ThemeData buildAppTheme(Brightness brightness, {String? styleOverride}) {
   final style = styleOverride ?? appDesignStyle;
@@ -52,7 +50,9 @@ ThemeData buildAppTheme(Brightness brightness, {String? styleOverride}) {
             : const Color(0xFFFCF7FB)
       : colorScheme.surface;
   final cardColor = isGlass
-      ? colorScheme.surface.withValues(alpha: brightness == Brightness.dark ? 0.72 : 0.86)
+      ? colorScheme.surface.withValues(
+          alpha: brightness == Brightness.dark ? 0.72 : 0.86,
+        )
       : isSoft || isNeumorphic
       ? colorScheme.secondaryContainer.withValues(alpha: 0.45)
       : isFlat
@@ -87,7 +87,9 @@ ThemeData buildAppTheme(Brightness brightness, {String? styleOverride}) {
     inputDecorationTheme: InputDecorationTheme(
       isDense: appDesignDensity == 'compact',
       filled: true,
-      fillColor: isSoft ? colorScheme.secondaryContainer.withValues(alpha: 0.35) : cardColor,
+      fillColor: isSoft
+          ? colorScheme.secondaryContainer.withValues(alpha: 0.35)
+          : cardColor,
       contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
       border: OutlineInputBorder(borderRadius: controlRadius),
       enabledBorder: OutlineInputBorder(
@@ -137,8 +139,10 @@ class AppAppearanceMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
     return PopupMenuButton<String>(
       key: const ValueKey('appearance-menu'),
+      tooltip: localizations.appearanceTooltip,
       onSelected: onSelected,
       child: _AppearanceTrigger(),
       itemBuilder: (context) => [
@@ -160,15 +164,18 @@ class _AppearanceTrigger extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final localizations = AppLocalizations.of(context);
     return Semantics(
       button: true,
-      label: 'Theme',
+      label: localizations.appearanceTooltip,
       child: Container(
         height: 40,
         padding: const EdgeInsetsDirectional.only(start: 10, end: 6),
         decoration: ShapeDecoration(
           color: colorScheme.surfaceContainerLow,
-          shape: StadiumBorder(side: BorderSide(color: colorScheme.outlineVariant)),
+          shape: StadiumBorder(
+            side: BorderSide(color: colorScheme.outlineVariant),
+          ),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -192,6 +199,7 @@ class _AppearancePreview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final localizations = AppLocalizations.of(context);
     final radius = style == 'soft' ? 14.0 : (style == 'flat' ? 4.0 : 9.0);
     final elevation = style == 'flat' ? 0.0 : (style == 'soft' ? 2.0 : 1.0);
     return Row(
@@ -217,13 +225,11 @@ class _AppearancePreview extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 12),
-        Text(
-          switch (style) {
-            'flat' => 'Flat',
-            'soft' => 'Soft',
-            _ => 'Material',
-          },
-        ),
+        Text(switch (style) {
+          'flat' => localizations.appearanceFlat,
+          'soft' => localizations.appearanceSoft,
+          _ => localizations.appearanceMaterial,
+        }),
         const SizedBox(width: 16),
         Icon(
           selected ? Icons.check_circle : Icons.radio_button_unchecked,

@@ -1,13 +1,36 @@
 {
+  "@@locale": "en",
   "appTitle": "URL Component Inspector",
-  "@appTitle": {
-    "description": "The app title shown in the system UI."
-  },
-  "appDescription": "Split a manually entered web URL into readable components and query parameters entirely offline.",
-  "@appDescription": {
-    "description": "The short description shown on the home page."
-  },
-  "languageEnglish": "English",
-  "languageKorean": "한국어",
-  "privacyPolicy": "Privacy policy"
+  "appDescription": "Inspect URL components and ordered query parameters entirely on this device. The address is never opened or sent.",
+  "languageMenuTooltip": "Choose language",
+  "privacyPolicy": "Privacy policy",
+  "appearanceTooltip": "Choose appearance",
+  "appearanceMaterial": "Material",
+  "appearanceFlat": "Flat",
+  "appearanceSoft": "Soft",
+  "urlInputLabel": "URL to inspect",
+  "urlInputHint": "https://example.com/path?key=value",
+  "inspectUrl": "Inspect URL",
+  "clearUrl": "Clear URL",
+  "inspectionResult": "Inspection result",
+  "scheme": "Scheme",
+  "host": "Host",
+  "port": "Port",
+  "path": "Path",
+  "fragment": "Fragment",
+  "defaultValue": "Default",
+  "noneValue": "None",
+  "componentValue": "{label}: {value}",
+  "@componentValue": {"placeholders": {"label": {"type": "String"}, "value": {"type": "String"}}},
+  "queryCount": "Query parameters: {count}",
+  "@queryCount": {"placeholders": {"count": {"type": "int"}}},
+  "queryParameter": "{name} = {value}",
+  "@queryParameter": {"placeholders": {"name": {"type": "String"}, "value": {"type": "String"}}},
+  "decodedParameter": "Decoded: {name} = {value}",
+  "@decodedParameter": {"placeholders": {"name": {"type": "String"}, "value": {"type": "String"}}},
+  "errorEmpty": "Enter a URL to inspect",
+  "errorAbsolute": "Enter a valid absolute URL with a scheme and host",
+  "errorScheme": "Only HTTP and HTTPS URLs are supported",
+  "errorTooLong": "URL is too long",
+  "errorEncoding": "URL contains malformed percent encoding or invalid UTF-8"
 }

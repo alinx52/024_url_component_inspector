@@ -5,8 +5,21 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_ar.dart';
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_hi.dart';
+import 'app_localizations_id.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_ja.dart';
 import 'app_localizations_ko.dart';
+import 'app_localizations_nl.dart';
+import 'app_localizations_pt.dart';
+import 'app_localizations_ru.dart';
+import 'app_localizations_vi.dart';
+import 'app_localizations_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -95,38 +108,198 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
+    Locale('ar'),
+    Locale('de'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('hi'),
+    Locale('id'),
+    Locale('it'),
+    Locale('ja'),
     Locale('ko'),
+    Locale('nl'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('vi'),
+    Locale('zh'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
   ];
 
-  /// The app title shown in the system UI.
+  /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
   /// **'URL Component Inspector'**
   String get appTitle;
 
-  /// The short description shown on the home page.
+  /// No description provided for @appDescription.
   ///
   /// In en, this message translates to:
-  /// **'Split a manually entered web URL into readable components and query parameters entirely offline.'**
+  /// **'Inspect URL components and ordered query parameters entirely on this device. The address is never opened or sent.'**
   String get appDescription;
 
-  /// No description provided for @languageEnglish.
+  /// No description provided for @languageMenuTooltip.
   ///
   /// In en, this message translates to:
-  /// **'English'**
-  String get languageEnglish;
-
-  /// No description provided for @languageKorean.
-  ///
-  /// In en, this message translates to:
-  /// **'한국어'**
-  String get languageKorean;
+  /// **'Choose language'**
+  String get languageMenuTooltip;
 
   /// No description provided for @privacyPolicy.
   ///
   /// In en, this message translates to:
   /// **'Privacy policy'**
   String get privacyPolicy;
+
+  /// No description provided for @appearanceTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose appearance'**
+  String get appearanceTooltip;
+
+  /// No description provided for @appearanceMaterial.
+  ///
+  /// In en, this message translates to:
+  /// **'Material'**
+  String get appearanceMaterial;
+
+  /// No description provided for @appearanceFlat.
+  ///
+  /// In en, this message translates to:
+  /// **'Flat'**
+  String get appearanceFlat;
+
+  /// No description provided for @appearanceSoft.
+  ///
+  /// In en, this message translates to:
+  /// **'Soft'**
+  String get appearanceSoft;
+
+  /// No description provided for @urlInputLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'URL to inspect'**
+  String get urlInputLabel;
+
+  /// No description provided for @urlInputHint.
+  ///
+  /// In en, this message translates to:
+  /// **'https://example.com/path?key=value'**
+  String get urlInputHint;
+
+  /// No description provided for @inspectUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Inspect URL'**
+  String get inspectUrl;
+
+  /// No description provided for @clearUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear URL'**
+  String get clearUrl;
+
+  /// No description provided for @inspectionResult.
+  ///
+  /// In en, this message translates to:
+  /// **'Inspection result'**
+  String get inspectionResult;
+
+  /// No description provided for @scheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Scheme'**
+  String get scheme;
+
+  /// No description provided for @host.
+  ///
+  /// In en, this message translates to:
+  /// **'Host'**
+  String get host;
+
+  /// No description provided for @port.
+  ///
+  /// In en, this message translates to:
+  /// **'Port'**
+  String get port;
+
+  /// No description provided for @path.
+  ///
+  /// In en, this message translates to:
+  /// **'Path'**
+  String get path;
+
+  /// No description provided for @fragment.
+  ///
+  /// In en, this message translates to:
+  /// **'Fragment'**
+  String get fragment;
+
+  /// No description provided for @defaultValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Default'**
+  String get defaultValue;
+
+  /// No description provided for @noneValue.
+  ///
+  /// In en, this message translates to:
+  /// **'None'**
+  String get noneValue;
+
+  /// No description provided for @componentValue.
+  ///
+  /// In en, this message translates to:
+  /// **'{label}: {value}'**
+  String componentValue(String label, String value);
+
+  /// No description provided for @queryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Query parameters: {count}'**
+  String queryCount(int count);
+
+  /// No description provided for @queryParameter.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} = {value}'**
+  String queryParameter(String name, String value);
+
+  /// No description provided for @decodedParameter.
+  ///
+  /// In en, this message translates to:
+  /// **'Decoded: {name} = {value}'**
+  String decodedParameter(String name, String value);
+
+  /// No description provided for @errorEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a URL to inspect'**
+  String get errorEmpty;
+
+  /// No description provided for @errorAbsolute.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid absolute URL with a scheme and host'**
+  String get errorAbsolute;
+
+  /// No description provided for @errorScheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Only HTTP and HTTPS URLs are supported'**
+  String get errorScheme;
+
+  /// No description provided for @errorTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'URL is too long'**
+  String get errorTooLong;
+
+  /// No description provided for @errorEncoding.
+  ///
+  /// In en, this message translates to:
+  /// **'URL contains malformed percent encoding or invalid UTF-8'**
+  String get errorEncoding;
 }
 
 class _AppLocalizationsDelegate
@@ -139,20 +312,87 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'ko'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+    'ar',
+    'de',
+    'en',
+    'es',
+    'fr',
+    'hi',
+    'id',
+    'it',
+    'ja',
+    'ko',
+    'nl',
+    'pt',
+    'ru',
+    'vi',
+    'zh',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+script codes are specified.
+  switch (locale.languageCode) {
+    case 'zh':
+      {
+        switch (locale.scriptCode) {
+          case 'Hans':
+            return AppLocalizationsZhHans();
+          case 'Hant':
+            return AppLocalizationsZhHant();
+        }
+        break;
+      }
+  }
+
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return AppLocalizationsPtBr();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'hi':
+      return AppLocalizationsHi();
+    case 'id':
+      return AppLocalizationsId();
+    case 'it':
+      return AppLocalizationsIt();
+    case 'ja':
+      return AppLocalizationsJa();
     case 'ko':
       return AppLocalizationsKo();
+    case 'nl':
+      return AppLocalizationsNl();
+    case 'pt':
+      return AppLocalizationsPt();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'vi':
+      return AppLocalizationsVi();
+    case 'zh':
+      return AppLocalizationsZh();
   }
 
   throw FlutterError(

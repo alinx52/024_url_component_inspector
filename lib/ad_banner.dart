@@ -14,13 +14,9 @@ class _AdBannerState extends State<AdBanner> {
   static const _releaseBannerId = String.fromEnvironment(
     'ADMOB_BANNER_AD_UNIT_ID',
   );
-  static const _hideBanner = bool.fromEnvironment(
-    'STORE_CAPTURE',
-    defaultValue: false,
-  ) || bool.fromEnvironment(
-    'DISABLE_ADS',
-    defaultValue: false,
-  );
+  static const _hideBanner =
+      bool.fromEnvironment('STORE_CAPTURE', defaultValue: false) ||
+      bool.fromEnvironment('DISABLE_ADS', defaultValue: false);
   static const _enableTestAds = bool.fromEnvironment(
     'ENABLE_TEST_ADS',
     defaultValue: false,
@@ -61,13 +57,19 @@ class _AdBannerState extends State<AdBanner> {
   @override
   Widget build(BuildContext context) {
     final ad = _ad;
-    if (ad == null) return const SizedBox.shrink();
     return SafeArea(
       top: false,
       child: SizedBox(
-        width: ad.size.width.toDouble(),
-        height: ad.size.height.toDouble(),
-        child: AdWidget(ad: ad),
+        height: AdSize.banner.height.toDouble(),
+        child: ad == null
+            ? const SizedBox(width: double.infinity)
+            : Center(
+                child: SizedBox(
+                  width: ad.size.width.toDouble(),
+                  height: ad.size.height.toDouble(),
+                  child: AdWidget(ad: ad),
+                ),
+              ),
       ),
     );
   }
