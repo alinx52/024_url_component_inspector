@@ -300,6 +300,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'URL contains malformed percent encoding or invalid UTF-8'**
   String get errorEncoding;
+
+  /// No description provided for @helpTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Guide'**
+  String get helpTooltip;
+
+  /// No description provided for @helpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'URL Component Inspector Guide'**
+  String get helpTitle;
+
+  /// No description provided for @helpProblemSolvedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Problem Solved'**
+  String get helpProblemSolvedTitle;
+
+  /// No description provided for @helpProblemSolvedContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Parses and decodes complex web URLs into structured components (scheme, host, port, path, ordered query parameters, fragment) offline without network requests.'**
+  String get helpProblemSolvedContent;
+
+  /// No description provided for @helpHowToUseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to Use'**
+  String get helpHowToUseTitle;
+
+  /// No description provided for @helpHowToUseContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste or type a web URL (HTTP or HTTPS) into the input box. The app dissects and decodes all URL segments in real time.'**
+  String get helpHowToUseContent;
+
+  /// No description provided for @helpReadingResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading Results'**
+  String get helpReadingResultsTitle;
+
+  /// No description provided for @helpReadingResultsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Displays Scheme, Hostname, Port, Path, Fragment, and an interactive list of Query Keys & Values (with decoded percent-encoding).'**
+  String get helpReadingResultsContent;
+
+  /// No description provided for @helpExampleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Example'**
+  String get helpExampleTitle;
+
+  /// No description provided for @helpExampleContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Input: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Path: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragment: top.'**
+  String get helpExampleContent;
+
+  /// No description provided for @helpLimitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation & Limitations'**
+  String get helpLimitsTitle;
+
+  /// No description provided for @helpLimitsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Syntactic URL parser only. Does not open links, fetch remote headers, check web safety, or verify domain certificate authenticity.'**
+  String get helpLimitsContent;
+
+  /// No description provided for @helpDataAndPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Data & Ads'**
+  String get helpDataAndPrivacyTitle;
+
+  /// No description provided for @helpDataAndPrivacyContent.
+  ///
+  /// In en, this message translates to:
+  /// **'All URLs are inspected on-device without internet requests, browser navigation, or server logging. An AdMob banner is displayed below.'**
+  String get helpDataAndPrivacyContent;
 }
 
 class _AppLocalizationsDelegate

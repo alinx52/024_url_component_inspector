@@ -106,4 +106,52 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get errorEncoding =>
       'L’URL contiene una codifica percentuale errata o UTF-8 non valido';
+
+  @override
+  String get helpTooltip => 'Guida e aiuto';
+
+  @override
+  String get helpTitle => 'Guida all\'ispettore componenti URL';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema risolto';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Analizza e decodifica URL complesse nei singoli componenti (schema, host, porta, percorso, parametri, frammento) offline.';
+
+  @override
+  String get helpHowToUseTitle => 'Come usare';
+
+  @override
+  String get helpHowToUseContent =>
+      'Incolla o digita un URL web (HTTP o HTTPS). L\'app analizza e decodifica tutti i segmenti e parametri in tempo reale.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lettura dei risultati';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra schema, host, porta, percorso, frammento ed elenco interattivo di parametri di query decodificati (chiavi e valori).';
+
+  @override
+  String get helpExampleTitle => 'Esempio';
+
+  @override
+  String get helpExampleContent =>
+      'Input: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Porta: 8080, Percorso: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFrammento: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validazione e limitazioni';
+
+  @override
+  String get helpLimitsContent =>
+      'Puro parser sintattico di URL. Non apre link, non scarica dati remoti né verifica la sicurezza o i certificati del sito.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dati locali e annunci';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tutti gli URL sono analizzati sul dispositivo senza connessioni o navigazione. È visibile un banner AdMob standard.';
 }

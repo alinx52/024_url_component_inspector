@@ -105,4 +105,52 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get errorEncoding =>
       'URL chứa mã hóa phần trăm sai hoặc UTF-8 không hợp lệ';
+
+  @override
+  String get helpTooltip => 'Trợ giúp & Hướng dẫn';
+
+  @override
+  String get helpTitle => 'Hướng dẫn kiểm tra thành phần URL';
+
+  @override
+  String get helpProblemSolvedTitle => 'Vấn đề giải quyết';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Phân tích và giải mã các URL web phức tạp thành các thành phần có cấu trúc (giao thức, máy chủ, cổng, đường dẫn, tham số, phân đoạn) ngoại tuyến.';
+
+  @override
+  String get helpHowToUseTitle => 'Cách sử dụng';
+
+  @override
+  String get helpHowToUseContent =>
+      'Dán hoặc nhập URL web (HTTP hoặc HTTPS) vào ô nhập. Ứng dụng sẽ phân tích và giải mã tất cả các phần URL theo thời gian thực.';
+
+  @override
+  String get helpReadingResultsTitle => 'Đọc kết quả';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Hiển thị Giao thức, Tên máy chủ, Cổng, Đường dẫn, Phân đoạn và danh sách Khóa & Giá trị truy vấn được giải mã.';
+
+  @override
+  String get helpExampleTitle => 'Ví dụ';
+
+  @override
+  String get helpExampleContent =>
+      'Đầu vào: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nMáy chủ: example.com, Cổng: 8080, Đường dẫn: /search\nTruy vấn: q = \"flutter dev\", lang = \"ko\"\nPhân đoạn: top.';
+
+  @override
+  String get helpLimitsTitle => 'Xác thực & Giới hạn';
+
+  @override
+  String get helpLimitsContent =>
+      'Chỉ là công cụ phân tích cú pháp URL. Không mở liên kết, không kiểm tra an toàn web hoặc tính xác thực của chứng chỉ.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dữ liệu cục bộ & Quảng cáo';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tất cả các URL được kiểm tra trên thiết bị mà không cần internet hay trình duyệt. Biểu ngữ AdMob hiển thị ở dưới cùng.';
 }

@@ -106,4 +106,52 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get errorEncoding =>
       'URL berisi pengodean persen yang salah atau UTF-8 yang tidak valid';
+
+  @override
+  String get helpTooltip => 'Bantuan & Panduan';
+
+  @override
+  String get helpTitle => 'Panduan Pemeriksa Komponen URL';
+
+  @override
+  String get helpProblemSolvedTitle => 'Masalah yang Diatasi';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Mengurai dan mendekode URL web menjadi komponen terstruktur (skema, host, port, path, parameter query, fragmen) secara offline.';
+
+  @override
+  String get helpHowToUseTitle => 'Cara Penggunaan';
+
+  @override
+  String get helpHowToUseContent =>
+      'Tempel atau ketik URL web (HTTP atau HTTPS) ke kolom masukan. Aplikasi langsung mengurai dan mendekode seluruh bagian URL.';
+
+  @override
+  String get helpReadingResultsTitle => 'Membaca Hasil';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Menampilkan Skema, Host, Port, Path, Fragmen, serta daftar Kunci & Nilai Query yang telah didekodekan.';
+
+  @override
+  String get helpExampleTitle => 'Contoh';
+
+  @override
+  String get helpExampleContent =>
+      'Masukan: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Path: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragmen: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validasi & Batasan';
+
+  @override
+  String get helpLimitsContent =>
+      'Hanya pengurai sintaksis URL. Tidak membuka tautan, memeriksa keamanan situs web, atau sertifikat SSL.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Data Lokal & Iklan';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Semua URL diperiksa di perangkat tanpa permintaan internet atau peramban. Spanduk standar AdMob ditampilkan di bawah.';
 }

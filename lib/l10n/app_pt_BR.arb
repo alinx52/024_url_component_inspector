@@ -28,5 +28,19 @@
   "errorAbsolute": "Digite uma URL absoluta válida com esquema e host",
   "errorScheme": "Somente URLs HTTP e HTTPS são compatíveis",
   "errorTooLong": "A URL é longa demais",
-  "errorEncoding": "A URL contém codificação percentual incorreta ou UTF-8 inválido"
+  "errorEncoding": "A URL contém codificação percentual incorreta ou UTF-8 inválido",
+  "helpTooltip": "Ajuda e guia",
+  "helpTitle": "Guia do Inspetor de Componentes de URL",
+  "helpProblemSolvedTitle": "Problema resolvido",
+  "helpProblemSolvedContent": "Analisa e decodifica URLs web complexas em seus componentes estruturados (esquema, host, porta, caminho, parâmetros, fragmento) offline.",
+  "helpHowToUseTitle": "Como usar",
+  "helpHowToUseContent": "Cole ou digite uma URL (HTTP ou HTTPS). O aplicativo analisa e decodifica todos os segmentos em tempo real.",
+  "helpReadingResultsTitle": "Leitura dos resultados",
+  "helpReadingResultsContent": "Exibe esquema, host, porta, caminho, fragmento e uma lista de chaves e valores decodificados dos parâmetros de consulta.",
+  "helpExampleTitle": "Exemplo",
+  "helpExampleContent": "Entrada: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Porta: 8080, Caminho: /search\nConsulta: q = \"flutter dev\", lang = \"ko\"\nFragmento: top.",
+  "helpLimitsTitle": "Validação e limites",
+  "helpLimitsContent": "Analisador sintático de URL. Não abre links, não testa a segurança do site nem verifica certificados SSL.",
+  "helpDataAndPrivacyTitle": "Dados locais e anúncios",
+  "helpDataAndPrivacyContent": "Todas as URLs são inspecionadas localmente sem chamadas de rede ou navegação. Um banner do AdMob é exibido abaixo."
 }

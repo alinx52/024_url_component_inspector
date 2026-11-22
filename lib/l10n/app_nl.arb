@@ -28,5 +28,19 @@
   "errorAbsolute": "Voer een geldige absolute URL met schema en host in",
   "errorScheme": "Alleen HTTP- en HTTPS-URL’s worden ondersteund",
   "errorTooLong": "De URL is te lang",
-  "errorEncoding": "De URL bevat onjuiste procentcodering of ongeldige UTF-8"
+  "errorEncoding": "De URL bevat onjuiste procentcodering of ongeldige UTF-8",
+  "helpTooltip": "Hulp en gids",
+  "helpTitle": "Gids voor URL-componenten",
+  "helpProblemSolvedTitle": "Opgelost probleem",
+  "helpProblemSolvedContent": "Ontleedt en decodeert web-URL's offline in gestructureerde componenten (schema, host, poort, pad, query-parameters, fragment).",
+  "helpHowToUseTitle": "Gebruiksaanwijzing",
+  "helpHowToUseContent": "Plak of typ een web-URL (HTTP of HTTPS). De app ontleedt en decodeert alle URL-segmenten direct in real-time.",
+  "helpReadingResultsTitle": "Resultaten aflezen",
+  "helpReadingResultsContent": "Toont schema, hostnaam, poort, pad, fragment en een overzicht van gedecodeerde queryparameters (sleutels en waarden).",
+  "helpExampleTitle": "Voorbeeld",
+  "helpExampleContent": "Invoer: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Poort: 8080, Pad: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragment: top.",
+  "helpLimitsTitle": "Validatie & Beperkingen",
+  "helpLimitsContent": "Uitsluitend syntactische URL-parser. Opent geen links en controleert geen weblocaties of beveiligingscertificaten.",
+  "helpDataAndPrivacyTitle": "Lokale gegevens & Advertenties",
+  "helpDataAndPrivacyContent": "Alle URL's worden op het apparaat gecontroleerd zonder netwerkverkeer. Onderaan staat een standaard AdMob-banner."
 }

@@ -106,4 +106,52 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get errorEncoding =>
       'Die URL enthält eine fehlerhafte Prozentkodierung oder ungültiges UTF-8';
+
+  @override
+  String get helpTooltip => 'Hilfe & Anleitung';
+
+  @override
+  String get helpTitle => 'URL-Komponenten-Prüfer-Leitfaden';
+
+  @override
+  String get helpProblemSolvedTitle => 'Gelöstes Problem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Analysiert und decodiert Web-URLs offline in strukturierte Komponenten (Schema, Host, Port, Pfad, Parameter, Fragment).';
+
+  @override
+  String get helpHowToUseTitle => 'Bedienung';
+
+  @override
+  String get helpHowToUseContent =>
+      'Fügen Sie eine Web-URL (HTTP oder HTTPS) ein. Die App zerlegt und decodiert alle Abschnitte und Parameter in Echtzeit.';
+
+  @override
+  String get helpReadingResultsTitle => 'Ergebnisse verstehen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Zeigt Schema, Hostname, Port, Pfad, Fragment und eine Liste aller decodierten Abfrageparameter (Schlüssel & Werte) an.';
+
+  @override
+  String get helpExampleTitle => 'Beispiel';
+
+  @override
+  String get helpExampleContent =>
+      'Eingabe: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Pfad: /search\nParameter: q = \"flutter dev\", lang = \"ko\"\nFragment: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validierung & Grenzen';
+
+  @override
+  String get helpLimitsContent =>
+      'Reiner syntaktischer URL-Parser. Öffnet keine Links, prüft weder Webinhalte noch Sicherheitszertifikate.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale Daten & Werbung';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle URLs werden ohne Netzwerkanfragen auf dem Gerät analysiert. Unten wird ein standardmäßiges AdMob-Banner angezeigt.';
 }

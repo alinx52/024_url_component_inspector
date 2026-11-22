@@ -106,4 +106,52 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get errorEncoding =>
       'URL में गलत प्रतिशत एन्कोडिंग या अमान्य UTF-8 है';
+
+  @override
+  String get helpTooltip => 'सहायता और मार्गदर्शिका';
+
+  @override
+  String get helpTitle => 'URL घटक निरीक्षक मार्गदर्शिका';
+
+  @override
+  String get helpProblemSolvedTitle => 'समस्या का समाधान';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'नेटवर्क अनुरोधों के बिना वेब URL को योजना, होस्ट, पोर्ट, पथ, क्वेरी पैरामीटर, और खंड में ऑफ़लाइन पार्स और डिकोड करता है।';
+
+  @override
+  String get helpHowToUseTitle => 'उपयोग कैसे करें';
+
+  @override
+  String get helpHowToUseContent =>
+      'इनपुट बॉक्स में एक वेब URL (HTTP या HTTPS) चिपकाएं। ऐप वास्तविक समय में सभी URL खंडों को पार्स और डिकोड करता है।';
+
+  @override
+  String get helpReadingResultsTitle => 'परिणाम कैसे समझें';
+
+  @override
+  String get helpReadingResultsContent =>
+      'योजना, होस्टनाम, पोर्ट, पथ, खंड और डिकोड किए गए क्वेरी कुंजी और मानों की एक सूची प्रदर्शित करता है।';
+
+  @override
+  String get helpExampleTitle => 'उदाहरण';
+
+  @override
+  String get helpExampleContent =>
+      'इनपुट: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nहोस्ट: example.com, पोर्ट: 8080, पथ: /search\nक्वेरी: q = \"flutter dev\", lang = \"ko\"\nखंड: top।';
+
+  @override
+  String get helpLimitsTitle => 'सत्यापन और सीमाएं';
+
+  @override
+  String get helpLimitsContent =>
+      'केवल वाक्य-विन्यास URL पार्सर है। लिंक नहीं खोलता है और न ही वेब सुरक्षा या SSL प्रमाणपत्रों की पुष्टि करता है।';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'स्थानीय डेटा और विज्ञापन';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'सभी URL बिना इंटरनेट अनुरोधों या ब्राउज़र नेविगेशन के डिवाइस पर जांचे जाते हैं। नीचे एक AdMob बैनर दिखाया गया है।';
 }

@@ -28,5 +28,19 @@
   "errorAbsolute": "スキームとホストを含む有効な絶対URLを入力してください",
   "errorScheme": "HTTPとHTTPSのURLのみ対応しています",
   "errorTooLong": "URLが長すぎます",
-  "errorEncoding": "URLに不正なパーセントエンコードまたは無効なUTF-8があります"
+  "errorEncoding": "URLに不正なパーセントエンコードまたは無効なUTF-8があります",
+  "helpTooltip": "ヘルプと使い方",
+  "helpTitle": "URL構成要素検証ガイド",
+  "helpProblemSolvedTitle": "解決する課題",
+  "helpProblemSolvedContent": "複雑またはエンコードされたURLを、外部通信やブラウザ起動を行わずにスキーム、ホスト、ポート、パス、クエリパラメータ、フラグメントに安全に分解・デコードします。",
+  "helpHowToUseTitle": "使用方法",
+  "helpHowToUseContent": "検査したいHTTP/HTTPSのURLを入力欄に貼り付けます。即座にすべてのセグメントとクエリパラメータがリアルタイムにデコードされます。",
+  "helpReadingResultsTitle": "結果の見方",
+  "helpReadingResultsContent": "スキーム、ホスト名、ポート、パス、フラグメント、およびデコードされたクエリのキーと値が一覧表示されます。",
+  "helpExampleTitle": "具体例",
+  "helpExampleContent": "入力: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nホスト: example.com, ポート: 8080, パス: /search\nクエリ: q = \"flutter dev\", lang = \"ko\"\nフラグメント: top。",
+  "helpLimitsTitle": "検証と制限事項",
+  "helpLimitsContent": "構文解析専用ツールです。リンク先への接続、実在性の確認、フィッシング対策検査、SSL証明書の検証を行うものではありません。",
+  "helpDataAndPrivacyTitle": "ローカルデータと広告",
+  "helpDataAndPrivacyContent": "入力されたURLは外部リクエストやブラウザを開くことなく端末内でのみ処理されます。画面下部に標準AdMobバナーが表示されます。"
 }

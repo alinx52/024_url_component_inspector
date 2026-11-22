@@ -28,5 +28,19 @@
   "errorAbsolute": "Nhập URL tuyệt đối hợp lệ có lược đồ và máy chủ",
   "errorScheme": "Chỉ hỗ trợ URL HTTP và HTTPS",
   "errorTooLong": "URL quá dài",
-  "errorEncoding": "URL chứa mã hóa phần trăm sai hoặc UTF-8 không hợp lệ"
+  "errorEncoding": "URL chứa mã hóa phần trăm sai hoặc UTF-8 không hợp lệ",
+  "helpTooltip": "Trợ giúp & Hướng dẫn",
+  "helpTitle": "Hướng dẫn kiểm tra thành phần URL",
+  "helpProblemSolvedTitle": "Vấn đề giải quyết",
+  "helpProblemSolvedContent": "Phân tích và giải mã các URL web phức tạp thành các thành phần có cấu trúc (giao thức, máy chủ, cổng, đường dẫn, tham số, phân đoạn) ngoại tuyến.",
+  "helpHowToUseTitle": "Cách sử dụng",
+  "helpHowToUseContent": "Dán hoặc nhập URL web (HTTP hoặc HTTPS) vào ô nhập. Ứng dụng sẽ phân tích và giải mã tất cả các phần URL theo thời gian thực.",
+  "helpReadingResultsTitle": "Đọc kết quả",
+  "helpReadingResultsContent": "Hiển thị Giao thức, Tên máy chủ, Cổng, Đường dẫn, Phân đoạn và danh sách Khóa & Giá trị truy vấn được giải mã.",
+  "helpExampleTitle": "Ví dụ",
+  "helpExampleContent": "Đầu vào: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nMáy chủ: example.com, Cổng: 8080, Đường dẫn: /search\nTruy vấn: q = \"flutter dev\", lang = \"ko\"\nPhân đoạn: top.",
+  "helpLimitsTitle": "Xác thực & Giới hạn",
+  "helpLimitsContent": "Chỉ là công cụ phân tích cú pháp URL. Không mở liên kết, không kiểm tra an toàn web hoặc tính xác thực của chứng chỉ.",
+  "helpDataAndPrivacyTitle": "Dữ liệu cục bộ & Quảng cáo",
+  "helpDataAndPrivacyContent": "Tất cả các URL được kiểm tra trên thiết bị mà không cần internet hay trình duyệt. Biểu ngữ AdMob hiển thị ở dưới cùng."
 }

@@ -28,5 +28,19 @@
   "errorAbsolute": "Gib eine gültige absolute URL mit Schema und Host ein",
   "errorScheme": "Nur HTTP- und HTTPS-URLs werden unterstützt",
   "errorTooLong": "Die URL ist zu lang",
-  "errorEncoding": "Die URL enthält eine fehlerhafte Prozentkodierung oder ungültiges UTF-8"
+  "errorEncoding": "Die URL enthält eine fehlerhafte Prozentkodierung oder ungültiges UTF-8",
+  "helpTooltip": "Hilfe & Anleitung",
+  "helpTitle": "URL-Komponenten-Prüfer-Leitfaden",
+  "helpProblemSolvedTitle": "Gelöstes Problem",
+  "helpProblemSolvedContent": "Analysiert und decodiert Web-URLs offline in strukturierte Komponenten (Schema, Host, Port, Pfad, Parameter, Fragment).",
+  "helpHowToUseTitle": "Bedienung",
+  "helpHowToUseContent": "Fügen Sie eine Web-URL (HTTP oder HTTPS) ein. Die App zerlegt und decodiert alle Abschnitte und Parameter in Echtzeit.",
+  "helpReadingResultsTitle": "Ergebnisse verstehen",
+  "helpReadingResultsContent": "Zeigt Schema, Hostname, Port, Pfad, Fragment und eine Liste aller decodierten Abfrageparameter (Schlüssel & Werte) an.",
+  "helpExampleTitle": "Beispiel",
+  "helpExampleContent": "Eingabe: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Pfad: /search\nParameter: q = \"flutter dev\", lang = \"ko\"\nFragment: top.",
+  "helpLimitsTitle": "Validierung & Grenzen",
+  "helpLimitsContent": "Reiner syntaktischer URL-Parser. Öffnet keine Links, prüft weder Webinhalte noch Sicherheitszertifikate.",
+  "helpDataAndPrivacyTitle": "Lokale Daten & Werbung",
+  "helpDataAndPrivacyContent": "Alle URLs werden ohne Netzwerkanfragen auf dem Gerät analysiert. Unten wird ein standardmäßiges AdMob-Banner angezeigt."
 }

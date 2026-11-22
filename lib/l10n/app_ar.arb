@@ -28,5 +28,19 @@
   "errorAbsolute": "أدخل عنوان URL مطلقًا صالحًا يتضمن مخططًا ومضيفًا",
   "errorScheme": "تُدعم عناوين HTTP وHTTPS فقط",
   "errorTooLong": "عنوان URL طويل جدًا",
-  "errorEncoding": "يحتوي عنوان URL على ترميز مئوي غير صحيح أو UTF-8 غير صالح"
+  "errorEncoding": "يحتوي عنوان URL على ترميز مئوي غير صحيح أو UTF-8 غير صالح",
+  "helpTooltip": "المساعدة والدليل",
+  "helpTitle": "دليل فاحص مكونات الروابط (URL)",
+  "helpProblemSolvedTitle": "المشكلة التي يعالجها",
+  "helpProblemSolvedContent": "يحلل ويفك ترميز الروابط المعقدة إلى مكونات منظمة (البروتوكول، المضيف، المنفذ، المسار، معلمات الاستعلام، الجزء) دون اتصال بالإنترنت.",
+  "helpHowToUseTitle": "طريقة الاستخدام",
+  "helpHowToUseContent": "الصق عنوان URL (HTTP أو HTTPS) في الحقل. يحلل التطبيق ويفك ترميز جميع أجزاء الرابط في الوقت الفعلي.",
+  "helpReadingResultsTitle": "قراءة النتائج",
+  "helpReadingResultsContent": "يعرض البروتوكول، واسم المضيف، والمنفذ، والمسار، والجزء، وقائمة مفصلة بمفاتيح وقيم معلمات الاستعلام المفكوكة.",
+  "helpExampleTitle": "مثال توضيحي",
+  "helpExampleContent": "الإدخال: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nالمضيف: example.com، المنفذ: 8080، المسار: search/\nالاستعلام: \"q = \"flutter dev و \"lang = \"ko\nالجزء: top.",
+  "helpLimitsTitle": "التحقق والقيود",
+  "helpLimitsContent": "محلل نحوي للروابط فقط. لا يفتح الروابط ولا يتحقق من أمان المواقع أو صحة شهادات SSL.",
+  "helpDataAndPrivacyTitle": "البيانات المحلية والإعلانات",
+  "helpDataAndPrivacyContent": "يتم فحص جميع الروابط محليًا دون أي طلبات شبكية أو فتح للمتصفح. يظهر شريط إعلاني قياسي من AdMob أسفل الشاشة."
 }

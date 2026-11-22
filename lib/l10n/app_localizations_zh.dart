@@ -103,6 +103,54 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get errorEncoding => 'URL 含有格式错误的百分号编码或无效的 UTF-8';
+
+  @override
+  String get helpTooltip => '帮助与指南';
+
+  @override
+  String get helpTitle => 'URL组件检查器指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解决的问题';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '在不发起任何网络请求的情况下，离线解析并解码复杂的Web网址，拆解为协议、主机、端口、路径、按序排布的查询参数及锚点。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '将HTTP或HTTPS网址粘贴或输入到输入框中。应用会即时解析并解码所有网址组成段落与查询参数。';
+
+  @override
+  String get helpReadingResultsTitle => '查看结果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '清晰列出协议方案（Scheme）、主机名、端口、路径、锚点片段，以及已解码百分号编码的键值对查询参数列表。';
+
+  @override
+  String get helpExampleTitle => '示例';
+
+  @override
+  String get helpExampleContent =>
+      '输入: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\n主机: example.com，端口: 8080，路径: /search\n查询: q = \"flutter dev\"，lang = \"ko\"\n锚点: top。';
+
+  @override
+  String get helpLimitsTitle => '验证与限制';
+
+  @override
+  String get helpLimitsContent =>
+      '仅为语法URL解析工具。绝不访问远程链接，不检测网页安全性、钓鱼风险或SSL证书有效性。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本地数据与广告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有网址解析均在本地完成，无网络请求、无浏览器跳转与服务器记录。屏幕底部展示标准AdMob横幅广告。';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -203,6 +251,54 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get errorEncoding => 'URL 含有格式错误的百分号编码或无效的 UTF-8';
+
+  @override
+  String get helpTooltip => '帮助与指南';
+
+  @override
+  String get helpTitle => 'URL组件检查器指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解决的问题';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '在不发起任何网络请求的情况下，离线解析并解码复杂的Web网址，拆解为协议、主机、端口、路径、按序排布的查询参数及锚点。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '将HTTP或HTTPS网址粘贴或输入到输入框中。应用会即时解析并解码所有网址组成段落与查询参数。';
+
+  @override
+  String get helpReadingResultsTitle => '查看结果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '清晰列出协议方案（Scheme）、主机名、端口、路径、锚点片段，以及已解码百分号编码的键值对查询参数列表。';
+
+  @override
+  String get helpExampleTitle => '示例';
+
+  @override
+  String get helpExampleContent =>
+      '输入: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\n主机: example.com，端口: 8080，路径: /search\n查询: q = \"flutter dev\"，lang = \"ko\"\n锚点: top。';
+
+  @override
+  String get helpLimitsTitle => '验证与限制';
+
+  @override
+  String get helpLimitsContent =>
+      '仅为语法URL解析工具。绝不访问远程链接，不检测网页安全性、钓鱼风险或SSL证书有效性。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本地数据与广告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有网址解析均在本地完成，无网络请求、无浏览器跳转与服务器记录。屏幕底部展示标准AdMob横幅广告。';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -303,4 +399,51 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get errorEncoding => 'URL 含有格式錯誤的百分比編碼或無效的 UTF-8';
+
+  @override
+  String get helpTooltip => '說明與指南';
+
+  @override
+  String get helpTitle => 'URL組件檢查器指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解決的問題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '在不發起任何網路請求的情況下，離線解析並解碼複雜的網址，拆解為協議、主機、連接埠、路徑、排序查詢參數及錨點。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '將HTTP或HTTPS網址貼上或輸入至欄位中。應用程式將即時解析並解碼所有網址分段與查詢參數。';
+
+  @override
+  String get helpReadingResultsTitle => '查看結果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '清楚列出協議（Scheme）、主機名、連接埠、路徑、錨點片段，以及已解碼百分比編碼的鍵值對查詢參數列表。';
+
+  @override
+  String get helpExampleTitle => '範例';
+
+  @override
+  String get helpExampleContent =>
+      '輸入: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\n主機: example.com，連接埠: 8080，路徑: /search\n查詢: q = \"flutter dev\"，lang = \"ko\"\n錨點: top。';
+
+  @override
+  String get helpLimitsTitle => '驗證與限制';
+
+  @override
+  String get helpLimitsContent => '僅為語法URL解析工具。絕不連線存取遠端網址，不檢測網頁安全性、釣魚風險或SSL憑證。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本機資料與廣告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有網址解析均在裝置本機完成，無網路請求、無瀏覽器導向與伺服器紀錄。螢幕底部顯示標準AdMob橫幅廣告。';
 }

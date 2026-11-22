@@ -106,4 +106,52 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get errorEncoding =>
       'De URL bevat onjuiste procentcodering of ongeldige UTF-8';
+
+  @override
+  String get helpTooltip => 'Hulp en gids';
+
+  @override
+  String get helpTitle => 'Gids voor URL-componenten';
+
+  @override
+  String get helpProblemSolvedTitle => 'Opgelost probleem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Ontleedt en decodeert web-URL\'s offline in gestructureerde componenten (schema, host, poort, pad, query-parameters, fragment).';
+
+  @override
+  String get helpHowToUseTitle => 'Gebruiksaanwijzing';
+
+  @override
+  String get helpHowToUseContent =>
+      'Plak of typ een web-URL (HTTP of HTTPS). De app ontleedt en decodeert alle URL-segmenten direct in real-time.';
+
+  @override
+  String get helpReadingResultsTitle => 'Resultaten aflezen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Toont schema, hostnaam, poort, pad, fragment en een overzicht van gedecodeerde queryparameters (sleutels en waarden).';
+
+  @override
+  String get helpExampleTitle => 'Voorbeeld';
+
+  @override
+  String get helpExampleContent =>
+      'Invoer: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Poort: 8080, Pad: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragment: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validatie & Beperkingen';
+
+  @override
+  String get helpLimitsContent =>
+      'Uitsluitend syntactische URL-parser. Opent geen links en controleert geen weblocaties of beveiligingscertificaten.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale gegevens & Advertenties';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle URL\'s worden op het apparaat gecontroleerd zonder netwerkverkeer. Onderaan staat een standaard AdMob-banner.';
 }

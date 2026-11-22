@@ -28,5 +28,19 @@
   "errorAbsolute": "Введите допустимый абсолютный URL со схемой и хостом",
   "errorScheme": "Поддерживаются только URL HTTP и HTTPS",
   "errorTooLong": "URL слишком длинный",
-  "errorEncoding": "URL содержит неверное процентное кодирование или недопустимый UTF-8"
+  "errorEncoding": "URL содержит неверное процентное кодирование или недопустимый UTF-8",
+  "helpTooltip": "Справка и руководство",
+  "helpTitle": "Руководство по инспектору компонентов URL",
+  "helpProblemSolvedTitle": "Решаемая задача",
+  "helpProblemSolvedContent": "Разбирает и декодирует веб-URL на структурированные компоненты (схема, хост, порт, путь, параметры, фрагмент) без отправки запросов.",
+  "helpHowToUseTitle": "Как использовать",
+  "helpHowToUseContent": "Вставьте веб-адрес (HTTP или HTTPS). Приложение мгновенно разберет и декодирует все сегменты и параметры URL.",
+  "helpReadingResultsTitle": "Чтение результатов",
+  "helpReadingResultsContent": "Отображает схему, хост, порт, путь, фрагмент и список декодированных параметров запроса (ключи и значения).",
+  "helpExampleTitle": "Пример",
+  "helpExampleContent": "Ввод: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nХост: example.com, Порт: 8080, Путь: /search\nЗапрос: q = \"flutter dev\", lang = \"ko\"\nФрагмент: top.",
+  "helpLimitsTitle": "Проверка и ограничения",
+  "helpLimitsContent": "Синтаксический парсер URL. Не переходит по ссылкам, не проверяет безопасность веб-сайтов и подлинность SSL-сертификатов.",
+  "helpDataAndPrivacyTitle": "Локальные данные и реклама",
+  "helpDataAndPrivacyContent": "Все URL проверяются на устройстве без обращения к сети и открытия браузера. Внизу отображается баннер AdMob."
 }

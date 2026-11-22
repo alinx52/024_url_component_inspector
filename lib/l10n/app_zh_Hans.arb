@@ -28,5 +28,19 @@
   "errorAbsolute": "请输入包含协议和主机的有效绝对 URL",
   "errorScheme": "仅支持 HTTP 和 HTTPS URL",
   "errorTooLong": "URL 过长",
-  "errorEncoding": "URL 含有格式错误的百分号编码或无效的 UTF-8"
+  "errorEncoding": "URL 含有格式错误的百分号编码或无效的 UTF-8",
+  "helpTooltip": "帮助与指南",
+  "helpTitle": "URL组件检查器指南",
+  "helpProblemSolvedTitle": "解决的问题",
+  "helpProblemSolvedContent": "在不发起任何网络请求的情况下，离线解析并解码复杂的Web网址，拆解为协议、主机、端口、路径、按序排布的查询参数及锚点。",
+  "helpHowToUseTitle": "使用方法",
+  "helpHowToUseContent": "将HTTP或HTTPS网址粘贴或输入到输入框中。应用会即时解析并解码所有网址组成段落与查询参数。",
+  "helpReadingResultsTitle": "查看结果",
+  "helpReadingResultsContent": "清晰列出协议方案（Scheme）、主机名、端口、路径、锚点片段，以及已解码百分号编码的键值对查询参数列表。",
+  "helpExampleTitle": "示例",
+  "helpExampleContent": "输入: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\n主机: example.com，端口: 8080，路径: /search\n查询: q = \"flutter dev\"，lang = \"ko\"\n锚点: top。",
+  "helpLimitsTitle": "验证与限制",
+  "helpLimitsContent": "仅为语法URL解析工具。绝不访问远程链接，不检测网页安全性、钓鱼风险或SSL证书有效性。",
+  "helpDataAndPrivacyTitle": "本地数据与广告",
+  "helpDataAndPrivacyContent": "所有网址解析均在本地完成，无网络请求、无浏览器跳转与服务器记录。屏幕底部展示标准AdMob横幅广告。"
 }

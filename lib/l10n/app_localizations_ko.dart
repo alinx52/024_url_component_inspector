@@ -104,4 +104,52 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get errorEncoding => 'URL에 잘못된 퍼센트 인코딩 또는 유효하지 않은 UTF-8이 있습니다';
+
+  @override
+  String get helpTooltip => '도움말 및 안내';
+
+  @override
+  String get helpTitle => 'URL 구성요소 검사기 안내';
+
+  @override
+  String get helpProblemSolvedTitle => '해결하는 문제';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '복잡하거나 인코딩된 웹 주소를 네트워크 연결이나 브라우저 실행 없이 스킴, 호스트, 포트, 경로, 쿼리 매개변수 및 프래그먼트로 안전하게 분해하고 디코딩합니다.';
+
+  @override
+  String get helpHowToUseTitle => '사용 방법';
+
+  @override
+  String get helpHowToUseContent =>
+      '검사할 HTTP 또는 HTTPS 웹 주소를 입력창에 붙여넣으세요. 입력하는 즉시 URL의 모든 구성요소와 쿼리 매개변수가 실시간으로 디코딩되어 분석됩니다.';
+
+  @override
+  String get helpReadingResultsTitle => '결과 확인';
+
+  @override
+  String get helpReadingResultsContent =>
+      '스킴(Scheme), 호스트, 포트, 경로, 프래그먼트와 함께 퍼센트 인코딩이 해제된 각 쿼리 파라미터의 키와 값을 깔끔한 표로 보여줍니다.';
+
+  @override
+  String get helpExampleTitle => '대표 예시';
+
+  @override
+  String get helpExampleContent =>
+      '입력: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\n호스트: example.com, 포트: 8080, 경로: /search\n쿼리: q = \"flutter dev\", lang = \"ko\"\n프래그먼트: top.';
+
+  @override
+  String get helpLimitsTitle => '검증 및 제한사항';
+
+  @override
+  String get helpLimitsContent =>
+      '문법적 URL 구문 분석기입니다. 해당 웹 주소로 접속하거나 링크의 실존 여부, 악성코드 유무, SSL 인증서의 유효성을 진단하거나 보증하지 않습니다.';
+
+  @override
+  String get helpDataAndPrivacyTitle => '로컬 데이터 및 광고';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '입력한 URL은 인터넷 통신이나 브라우저 로딩 없이 기기 내부에서만 파싱됩니다. 화면 하단에 Google AdMob 표준 배너 광고가 표시됩니다.';
 }

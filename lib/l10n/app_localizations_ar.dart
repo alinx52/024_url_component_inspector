@@ -106,4 +106,52 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get errorEncoding =>
       'يحتوي عنوان URL على ترميز مئوي غير صحيح أو UTF-8 غير صالح';
+
+  @override
+  String get helpTooltip => 'المساعدة والدليل';
+
+  @override
+  String get helpTitle => 'دليل فاحص مكونات الروابط (URL)';
+
+  @override
+  String get helpProblemSolvedTitle => 'المشكلة التي يعالجها';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'يحلل ويفك ترميز الروابط المعقدة إلى مكونات منظمة (البروتوكول، المضيف، المنفذ، المسار، معلمات الاستعلام، الجزء) دون اتصال بالإنترنت.';
+
+  @override
+  String get helpHowToUseTitle => 'طريقة الاستخدام';
+
+  @override
+  String get helpHowToUseContent =>
+      'الصق عنوان URL (HTTP أو HTTPS) في الحقل. يحلل التطبيق ويفك ترميز جميع أجزاء الرابط في الوقت الفعلي.';
+
+  @override
+  String get helpReadingResultsTitle => 'قراءة النتائج';
+
+  @override
+  String get helpReadingResultsContent =>
+      'يعرض البروتوكول، واسم المضيف، والمنفذ، والمسار، والجزء، وقائمة مفصلة بمفاتيح وقيم معلمات الاستعلام المفكوكة.';
+
+  @override
+  String get helpExampleTitle => 'مثال توضيحي';
+
+  @override
+  String get helpExampleContent =>
+      'الإدخال: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nالمضيف: example.com، المنفذ: 8080، المسار: search/\nالاستعلام: \"q = \"flutter dev و \"lang = \"ko\nالجزء: top.';
+
+  @override
+  String get helpLimitsTitle => 'التحقق والقيود';
+
+  @override
+  String get helpLimitsContent =>
+      'محلل نحوي للروابط فقط. لا يفتح الروابط ولا يتحقق من أمان المواقع أو صحة شهادات SSL.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'البيانات المحلية والإعلانات';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'يتم فحص جميع الروابط محليًا دون أي طلبات شبكية أو فتح للمتصفح. يظهر شريط إعلاني قياسي من AdMob أسفل الشاشة.';
 }

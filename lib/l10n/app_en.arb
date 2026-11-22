@@ -21,16 +21,63 @@
   "defaultValue": "Default",
   "noneValue": "None",
   "componentValue": "{label}: {value}",
-  "@componentValue": {"placeholders": {"label": {"type": "String"}, "value": {"type": "String"}}},
+  "@componentValue": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
   "queryCount": "Query parameters: {count}",
-  "@queryCount": {"placeholders": {"count": {"type": "int"}}},
+  "@queryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "queryParameter": "{name} = {value}",
-  "@queryParameter": {"placeholders": {"name": {"type": "String"}, "value": {"type": "String"}}},
+  "@queryParameter": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
   "decodedParameter": "Decoded: {name} = {value}",
-  "@decodedParameter": {"placeholders": {"name": {"type": "String"}, "value": {"type": "String"}}},
+  "@decodedParameter": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
   "errorEmpty": "Enter a URL to inspect",
   "errorAbsolute": "Enter a valid absolute URL with a scheme and host",
   "errorScheme": "Only HTTP and HTTPS URLs are supported",
   "errorTooLong": "URL is too long",
-  "errorEncoding": "URL contains malformed percent encoding or invalid UTF-8"
+  "errorEncoding": "URL contains malformed percent encoding or invalid UTF-8",
+  "helpTooltip": "Help & Guide",
+  "helpTitle": "URL Component Inspector Guide",
+  "helpProblemSolvedTitle": "Problem Solved",
+  "helpProblemSolvedContent": "Parses and decodes complex web URLs into structured components (scheme, host, port, path, ordered query parameters, fragment) offline without network requests.",
+  "helpHowToUseTitle": "How to Use",
+  "helpHowToUseContent": "Paste or type a web URL (HTTP or HTTPS) into the input box. The app dissects and decodes all URL segments in real time.",
+  "helpReadingResultsTitle": "Reading Results",
+  "helpReadingResultsContent": "Displays Scheme, Hostname, Port, Path, Fragment, and an interactive list of Query Keys & Values (with decoded percent-encoding).",
+  "helpExampleTitle": "Example",
+  "helpExampleContent": "Input: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Path: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragment: top.",
+  "helpLimitsTitle": "Validation & Limitations",
+  "helpLimitsContent": "Syntactic URL parser only. Does not open links, fetch remote headers, check web safety, or verify domain certificate authenticity.",
+  "helpDataAndPrivacyTitle": "Local Data & Ads",
+  "helpDataAndPrivacyContent": "All URLs are inspected on-device without internet requests, browser navigation, or server logging. An AdMob banner is displayed below."
 }

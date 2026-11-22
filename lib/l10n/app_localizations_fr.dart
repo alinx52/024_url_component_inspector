@@ -106,4 +106,52 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get errorEncoding =>
       'L’URL contient un codage en pourcentage incorrect ou un UTF-8 non valide';
+
+  @override
+  String get helpTooltip => 'Aide et guide';
+
+  @override
+  String get helpTitle => 'Guide de l\'inspecteur de composants d\'URL';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problème résolu';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Analyse et décode les URLs complexes en composants structurés (schéma, hôte, port, chemin, paramètres, fragment) hors ligne.';
+
+  @override
+  String get helpHowToUseTitle => 'Mode d\'emploi';
+
+  @override
+  String get helpHowToUseContent =>
+      'Collez ou saisissez une URL web (HTTP ou HTTPS). L\'application dissèque et décode tous les segments en direct.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lecture des résultats';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Affiche le schéma, l\'hôte, le port, le chemin, le fragment et la liste des clés/valeurs de requête décodées.';
+
+  @override
+  String get helpExampleTitle => 'Exemple';
+
+  @override
+  String get helpExampleContent =>
+      'Entrée : \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHôte : example.com, Port : 8080, Chemin : /search\nRequête : q = \"flutter dev\", lang = \"ko\"\nFragment : top.';
+
+  @override
+  String get helpLimitsTitle => 'Validations et limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Analyseur syntaxique d\'URL uniquement. N\'ouvre aucun lien, ne vérifie ni la sécurité du site ni les certificats SSL.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Données locales et publicités';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Toutes les URLs sont inspectées localement sans requêtes web ni navigation. Une bannière AdMob est affichée en bas.';
 }

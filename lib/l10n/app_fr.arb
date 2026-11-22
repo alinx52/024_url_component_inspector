@@ -28,5 +28,19 @@
   "errorAbsolute": "Saisissez une URL absolue valide avec un schéma et un hôte",
   "errorScheme": "Seules les URL HTTP et HTTPS sont acceptées",
   "errorTooLong": "L’URL est trop longue",
-  "errorEncoding": "L’URL contient un codage en pourcentage incorrect ou un UTF-8 non valide"
+  "errorEncoding": "L’URL contient un codage en pourcentage incorrect ou un UTF-8 non valide",
+  "helpTooltip": "Aide et guide",
+  "helpTitle": "Guide de l'inspecteur de composants d'URL",
+  "helpProblemSolvedTitle": "Problème résolu",
+  "helpProblemSolvedContent": "Analyse et décode les URLs complexes en composants structurés (schéma, hôte, port, chemin, paramètres, fragment) hors ligne.",
+  "helpHowToUseTitle": "Mode d'emploi",
+  "helpHowToUseContent": "Collez ou saisissez une URL web (HTTP ou HTTPS). L'application dissèque et décode tous les segments en direct.",
+  "helpReadingResultsTitle": "Lecture des résultats",
+  "helpReadingResultsContent": "Affiche le schéma, l'hôte, le port, le chemin, le fragment et la liste des clés/valeurs de requête décodées.",
+  "helpExampleTitle": "Exemple",
+  "helpExampleContent": "Entrée : \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHôte : example.com, Port : 8080, Chemin : /search\nRequête : q = \"flutter dev\", lang = \"ko\"\nFragment : top.",
+  "helpLimitsTitle": "Validations et limites",
+  "helpLimitsContent": "Analyseur syntaxique d'URL uniquement. N'ouvre aucun lien, ne vérifie ni la sécurité du site ni les certificats SSL.",
+  "helpDataAndPrivacyTitle": "Données locales et publicités",
+  "helpDataAndPrivacyContent": "Toutes les URLs sont inspectées localement sans requêtes web ni navigation. Une bannière AdMob est affichée en bas."
 }

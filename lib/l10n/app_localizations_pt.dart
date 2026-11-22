@@ -106,6 +106,54 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get errorEncoding =>
       'A URL contém codificação percentual incorreta ou UTF-8 inválido';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Inspetor de Componentes de URL';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Analisa e decodifica URLs web complexas em seus componentes estruturados (esquema, host, porta, caminho, parâmetros, fragmento) offline.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Cole ou digite uma URL (HTTP ou HTTPS). O aplicativo analisa e decodifica todos os segmentos em tempo real.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Exibe esquema, host, porta, caminho, fragmento e uma lista de chaves e valores decodificados dos parâmetros de consulta.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Entrada: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Porta: 8080, Caminho: /search\nConsulta: q = \"flutter dev\", lang = \"ko\"\nFragmento: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Analisador sintático de URL. Não abre links, não testa a segurança do site nem verifica certificados SSL.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todas as URLs são inspecionadas localmente sem chamadas de rede ou navegação. Um banner do AdMob é exibido abaixo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -209,4 +257,52 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get errorEncoding =>
       'A URL contém codificação percentual incorreta ou UTF-8 inválido';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Inspetor de Componentes de URL';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Analisa e decodifica URLs web complexas em seus componentes estruturados (esquema, host, porta, caminho, parâmetros, fragmento) offline.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Cole ou digite uma URL (HTTP ou HTTPS). O aplicativo analisa e decodifica todos os segmentos em tempo real.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Exibe esquema, host, porta, caminho, fragmento e uma lista de chaves e valores decodificados dos parâmetros de consulta.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Entrada: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Porta: 8080, Caminho: /search\nConsulta: q = \"flutter dev\", lang = \"ko\"\nFragmento: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Analisador sintático de URL. Não abre links, não testa a segurança do site nem verifica certificados SSL.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todas as URLs são inspecionadas localmente sem chamadas de rede ou navegação. Um banner do AdMob é exibido abaixo.';
 }

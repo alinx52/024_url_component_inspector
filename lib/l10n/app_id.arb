@@ -28,5 +28,19 @@
   "errorAbsolute": "Masukkan URL absolut yang valid dengan skema dan host",
   "errorScheme": "Hanya URL HTTP dan HTTPS yang didukung",
   "errorTooLong": "URL terlalu panjang",
-  "errorEncoding": "URL berisi pengodean persen yang salah atau UTF-8 yang tidak valid"
+  "errorEncoding": "URL berisi pengodean persen yang salah atau UTF-8 yang tidak valid",
+  "helpTooltip": "Bantuan & Panduan",
+  "helpTitle": "Panduan Pemeriksa Komponen URL",
+  "helpProblemSolvedTitle": "Masalah yang Diatasi",
+  "helpProblemSolvedContent": "Mengurai dan mendekode URL web menjadi komponen terstruktur (skema, host, port, path, parameter query, fragmen) secara offline.",
+  "helpHowToUseTitle": "Cara Penggunaan",
+  "helpHowToUseContent": "Tempel atau ketik URL web (HTTP atau HTTPS) ke kolom masukan. Aplikasi langsung mengurai dan mendekode seluruh bagian URL.",
+  "helpReadingResultsTitle": "Membaca Hasil",
+  "helpReadingResultsContent": "Menampilkan Skema, Host, Port, Path, Fragmen, serta daftar Kunci & Nilai Query yang telah didekodekan.",
+  "helpExampleTitle": "Contoh",
+  "helpExampleContent": "Masukan: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Path: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragmen: top.",
+  "helpLimitsTitle": "Validasi & Batasan",
+  "helpLimitsContent": "Hanya pengurai sintaksis URL. Tidak membuka tautan, memeriksa keamanan situs web, atau sertifikat SSL.",
+  "helpDataAndPrivacyTitle": "Data Lokal & Iklan",
+  "helpDataAndPrivacyContent": "Semua URL diperiksa di perangkat tanpa permintaan internet atau peramban. Spanduk standar AdMob ditampilkan di bawah."
 }

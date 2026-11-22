@@ -106,4 +106,52 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get errorEncoding =>
       'URL contains malformed percent encoding or invalid UTF-8';
+
+  @override
+  String get helpTooltip => 'Help & Guide';
+
+  @override
+  String get helpTitle => 'URL Component Inspector Guide';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problem Solved';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Parses and decodes complex web URLs into structured components (scheme, host, port, path, ordered query parameters, fragment) offline without network requests.';
+
+  @override
+  String get helpHowToUseTitle => 'How to Use';
+
+  @override
+  String get helpHowToUseContent =>
+      'Paste or type a web URL (HTTP or HTTPS) into the input box. The app dissects and decodes all URL segments in real time.';
+
+  @override
+  String get helpReadingResultsTitle => 'Reading Results';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Displays Scheme, Hostname, Port, Path, Fragment, and an interactive list of Query Keys & Values (with decoded percent-encoding).';
+
+  @override
+  String get helpExampleTitle => 'Example';
+
+  @override
+  String get helpExampleContent =>
+      'Input: \"https://example.com:8080/search?q=flutter+dev&lang=ko#top\"\nHost: example.com, Port: 8080, Path: /search\nQuery: q = \"flutter dev\", lang = \"ko\"\nFragment: top.';
+
+  @override
+  String get helpLimitsTitle => 'Validation & Limitations';
+
+  @override
+  String get helpLimitsContent =>
+      'Syntactic URL parser only. Does not open links, fetch remote headers, check web safety, or verify domain certificate authenticity.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Local Data & Ads';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'All URLs are inspected on-device without internet requests, browser navigation, or server logging. An AdMob banner is displayed below.';
 }
